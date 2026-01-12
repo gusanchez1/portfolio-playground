@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+  #burger {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
