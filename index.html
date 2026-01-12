@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Playground</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">Logo</h1>
+            <span id="burguer" class="material-symbols-outlined">menu</span>
+            <nav class="nav" id="itens">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#resources" class="nav__link">Resources</a></li>
+                    <li class="nav__item"><a href="mailto:gus.sanchez.dev@gmail.com" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <a href="https://github.com/gusanchez1" target="_blank" rel="noopener noreferrer" class="nav__link">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero">
+        <div class="hero__content">
+            <h2 class="hero__title">
+                Gustavo Avelino Sanchez,<br>
+                <span class="hero__subtitle">Front-end Developer</span>
+            </h2>
+
+            <p class="hero__description">
+                Fourth-semester Computer Science student from São Paulo, Brazil.
+                Building clean, responsive interfaces with HTML5 and CSS3.
+            </p>
+
+            <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary">View work</a>
+                <a href="mailto:gus.sanchez.dev@gmail.com" class="btn btn--secondary">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <div class="skills__header">
+            <h3 class="skills__title">Skills</h3>
+            <h4 class="skills__subtitle">What I bring to the table</h4>
+            <p class="skills__description">
+                Proficiency across modern front-end technologies and tools.
+            </p>
+        </div>
+
+        <div class="skills__cards">
+            
+            <article class="skills__card">
+                <img src="assets/images/placeholder.jpg" alt="HTML5 icon" class="skills__icon">
+                <h5 class="skills__card-title">HTML5</h5>
+                <p class="skills__card-subtitle">Semantic markup</p>
+                <p class="skills__card-text">
+                    Six months of focused study and practice.
+                </p>
+                <a href="#" class="skills__card-link">Learn more →</a>
+            </article>
+
+            <article class="skills__card">
+                <img src="assets/images/placeholder.jpg" alt="CSS3 icon" class="skills__icon">
+                <h5 class="skills__card-title">CSS3</h5>
+                <p class="skills__card-subtitle">Responsive design</p>
+                <p class="skills__card-text">
+                    Creating layouts that work across all devices.
+                </p>
+                <a href="#" class="skills__card-link">Learn more →</a>
+            </article>
+
+            <article class="skills__card">
+                <img src="assets/images/placeholder.jpg" alt="Git icon" class="skills__icon">
+                <h5 class="skills__card-title">Git</h5>
+                <p class="skills__card-subtitle">Version control</p>
+                <p class="skills__card-text">
+                    Managing code changes and collaboration workflows.
+                </p>
+                <a href="#" class="skills__card-link">Learn more →</a>
+            </article>
+
+            <article class="skills__card">
+                <img src="assets/images/placeholder.jpg" alt="GitHub icon" class="skills__icon">
+                <h5 class="skills__card-title">GitHub</h5>
+                <p class="skills__card-subtitle">Repository management</p>
+                <p class="skills__card-text">
+                    Hosting and sharing projects with the development community.
+                </p>
+                <a href="#" class="skills__card-link">Learn more →</a>
+            </article>
+
+            <article class="skills__card">
+                <img src="assets/images/placeholder.jpg" alt="Learning icon" class="skills__icon">
+                <h5 class="skills__card-title">Continuous Learning</h5>
+                <p class="skills__card-subtitle">Growth mindset</p>
+                <p class="skills__card-text">
+                    Actively exploring back-end and full-stack development paths.
+                </p>
+                <a href="#" class="skills__card-link">Discover my journey →</a>
+            </article>
+
+        </div>
+    </section>
+    <script>
+        const burger = document.getElementById("burguer");
+        const nav = document.querySelector(".nav");
+
+        burger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
